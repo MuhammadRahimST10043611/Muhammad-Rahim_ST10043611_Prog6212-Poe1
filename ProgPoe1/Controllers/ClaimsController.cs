@@ -62,5 +62,4 @@ namespace ProgPoe1.Controllers
             return RedirectToAction("ApprovalDashboard");
         }
     }
-
 }
