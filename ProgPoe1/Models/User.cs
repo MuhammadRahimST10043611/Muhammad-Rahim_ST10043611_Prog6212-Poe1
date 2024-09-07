@@ -1,8 +1,11 @@
-namespace ProgPoe1.Models;
-public class User
+namespace ProgPoe1.Models
 {
-    public int UserId { get; set; }
-    public string Username { get; set; }
-    public string Role { get; set; }  // Lecturer, Coordinator, Manager
+    public class User
+    {
+        public int UserId { get; set; }  // Unique identifier for the user
+        public string Username { get; set; }  // Username of the user
+        public string Role { get; set; }  // Role of the user (Lecturer, Coordinator, Manager)
+    }
 }
 
+//------------------------------------------...ooo000 END OF FILE 000ooo...----------------------------------------------------------------------------------------------------------------------//

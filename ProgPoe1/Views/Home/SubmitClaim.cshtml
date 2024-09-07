@@ -4,6 +4,7 @@
 <div class="container my-5">
     <div class="card shadow-lg p-4">
         <h2 class="h4 mb-4 text-center text-primary">Submit Your Monthly Claim</h2>
+        <!-- Form for submitting claims -->
         <form asp-action="SubmitClaim" method="post" enctype="multipart/form-data">
             <div class="form-group mb-4">
                 <label for="lecturerName" class="form-label">Lecturer Name:</label>
@@ -21,9 +22,9 @@
                 <label for="supportingDocument" class="form-label">Supporting Document:</label>
                 <input type="file" name="supportingDocument" class="form-control-file" id="supportingDocument" />
             </div>
-            <div class="text-center">
-                <input type="submit" value="Submit Claim" class="btn btn-success btn-lg" />
-            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Submit Claim</button>
         </form>
     </div>
 </div>
+
+//------------------------------------------...ooo000 END OF FILE 000ooo...----------------------------------------------------------------------------------------------------------------------//

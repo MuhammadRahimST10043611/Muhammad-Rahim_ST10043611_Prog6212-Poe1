@@ -6,14 +6,26 @@ namespace ProgPoe1.Controllers
 {
     public class ClaimsController : Controller
     {
-        // This would normally be replaced by a database context for database interaction.
+        // Static list to hold claims, typically this would be managed by a database context.
         private static List<Claim> Claims = new List<Claim>();
 
+        //------------------------------------------------------------------------------------------------------------------------//
+        /// <summary>
+        /// Displays the view for submitting a new claim.
+        /// </summary>
+        /// <returns>View for submitting a claim.</returns>
         public IActionResult SubmitClaim()
         {
             return View();
         }
 
+        //------------------------------------------------------------------------------------------------------------------------//
+        /// <summary>
+        /// Processes the submitted claim along with an optional supporting document.
+        /// </summary>
+        /// <param name="claim">The claim details submitted by the user.</param>
+        /// <param name="supportingDocument">The supporting document file, if any.</param>
+        /// <returns>Redirects to the Home index page after submission.</returns>
         [HttpPost]
         public IActionResult SubmitClaim(Claim claim, IFormFile supportingDocument)
         {
@@ -32,6 +44,11 @@ namespace ProgPoe1.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        //------------------------------------------------------------------------------------------------------------------------//
+        /// <summary>
+        /// Displays the approval dashboard with all submitted claims.
+        /// </summary>
+        /// <returns>View displaying the list of claims for approval.</returns>
         public IActionResult ApprovalDashboard()
         {
             if (Claims == null)
@@ -42,6 +59,12 @@ namespace ProgPoe1.Controllers
             return View(Claims);
         }
 
+        //------------------------------------------------------------------------------------------------------------------------//
+        /// <summary>
+        /// Approves a claim based on the given ID.
+        /// </summary>
+        /// <param name="id">ID of the claim to be approved.</param>
+        /// <returns>Redirects to the approval dashboard.</returns>
         public IActionResult ApproveClaim(int id)
         {
             var claim = Claims.FirstOrDefault(c => c.Id == id);
@@ -52,6 +75,12 @@ namespace ProgPoe1.Controllers
             return RedirectToAction("ApprovalDashboard");
         }
 
+        //------------------------------------------------------------------------------------------------------------------------//
+        /// <summary>
+        /// Rejects a claim based on the given ID.
+        /// </summary>
+        /// <param name="id">ID of the claim to be rejected.</param>
+        /// <returns>Redirects to the approval dashboard.</returns>
         public IActionResult RejectClaim(int id)
         {
             var claim = Claims.FirstOrDefault(c => c.Id == id);
@@ -63,3 +92,5 @@ namespace ProgPoe1.Controllers
         }
     }
 }
+
+//------------------------------------------...ooo000 END OF FILE 000ooo...----------------------------------------------------------------------------------------------------------------------//
