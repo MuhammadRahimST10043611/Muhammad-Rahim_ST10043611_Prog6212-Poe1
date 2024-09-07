@@ -2,28 +2,56 @@
 
 <!-- Submit Claim Section -->
 <div class="container my-5">
-    <div class="card shadow-sm p-4">
-        <h2 class="h4 mb-3">Submit Your Monthly Claim</h2>
+    <div class="card shadow-lg p-4">
+        <h2 class="h4 mb-4 text-center text-primary">Submit Your Monthly Claim</h2>
         <form asp-action="SubmitClaim" method="post" enctype="multipart/form-data">
-            <div class="form-group mb-3">
+            <div class="form-group mb-4">
                 <label for="lecturerName" class="form-label">Lecturer Name:</label>
-                <input type="text" asp-for="LecturerName" class="form-control" id="lecturerName" required />
+                <input type="text" asp-for="LecturerName" class="form-control form-control-lg" id="lecturerName" placeholder="Enter your name" required />
             </div>
-            <div class="form-group mb-3">
-                <label for="hourlyRate" class="form-label">Hourly Rate:</label>
-                <input type="number" asp-for="HourlyRate" class="form-control" id="hourlyRate" step="0.01" required />
+            <div class="form-group mb-4">
+                <label for="hourlyRate" class="form-label">Hourly Rate (ZAR):</label>
+                <input type="number" asp-for="HourlyRate" class="form-control form-control-lg" id="hourlyRate" step="0.01" placeholder="Enter your hourly rate" required />
             </div>
-            <div class="form-group mb-3">
+            <div class="form-group mb-4">
                 <label for="hoursWorked" class="form-label">Total Hours Worked:</label>
-                <input type="number" asp-for="HoursWorked" class="form-control" id="hoursWorked" required />
+                <input type="number" asp-for="HoursWorked" class="form-control form-control-lg" id="hoursWorked" placeholder="Enter total hours worked" required />
             </div>
             <div class="form-group mb-4">
                 <label for="supportingDocument" class="form-label">Supporting Document:</label>
                 <input type="file" name="supportingDocument" class="form-control-file" id="supportingDocument" />
             </div>
-            <div class="text-end">
-                <input type="submit" value="Submit Claim" class="btn btn-success" />
+            <div class="text-center">
+                <input type="submit" value="Submit Claim" class="btn btn-success btn-lg" />
             </div>
         </form>
     </div>
 </div>
+
+<!-- Optional Bootstrap and custom CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    .container {
+        background-color: #f8f9fa;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .card {
+        border-radius: 10px;
+        border: none;
+    }
+
+    .form-control-lg {
+        border-radius: 5px;
+    }
+
+    .btn-success {
+        background-color: #28a745;
+        border: none;
+    }
+
+        .btn-success:hover {
+            background-color: #218838;
+        }
+</style>

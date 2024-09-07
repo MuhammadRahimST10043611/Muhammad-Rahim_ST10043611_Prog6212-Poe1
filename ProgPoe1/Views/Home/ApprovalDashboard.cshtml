@@ -2,49 +2,101 @@
 
 <!-- Approval Dashboard Section -->
 <div class="container my-5">
-    <div class="card shadow-sm p-4">
-        <h2 class="h4 mb-3">Approval Dashboard</h2>
+    <div class="card shadow-lg p-4">
+        <h2 class="h4 mb-4 text-center text-primary">Approval Dashboard</h2>
 
-                    <!-- Sample Data for Display -->
-                    <tr>
-                        <td>John Doe</td>
-                        <td>R50.00 (Hourly Rate)</td>
-                        <td>20 (Hours Worked)</td>
-                        <td>R1000.00 (Total Amount)</td>
-                        <td>
-                            <span class="badge bg-warning text-dark">Submitted</span>
-                        </td>
-                        <td>
-                            <a href="#" class="btn btn-sm btn-outline-success">Approve</a>
-                            <a href="#" class="btn btn-sm btn-outline-danger">Reject</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Jane Smith</td>
-                        <td>R60.00 (Hourly Rate)</td>
-                        <td>15 (Hours Worked)</td>
-                        <td>R900.00 (Total Amount)</td>
-                        <td>
-                            <span class="badge bg-success">Approved</span>
-                        </td>
-                        <td>
-                            <!-- No action needed for approved claims -->
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Emily Johnson</td>
-                        <td>R55.00 (Hourly Rate)</td>
-                        <td>18 (Hours Worked)</td>
-                        <td>R990.00 (Total Amount)</td>
-                        <td>
-                            <span class="badge bg-danger">Rejected</span>
-                        </td>
-                        <td>
-                            <!-- No action needed for rejected claims -->
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        }
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr class="bg-light text-dark">
+                    <th>Lecturer Name</th>
+                    <th>Hourly Rate (ZAR)</th>
+                    <th>Hours Worked</th>
+                    <th>Total Amount (ZAR)</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample Data for Display -->
+                <tr>
+                    <td>John Doe</td>
+                    <td>R50.00</td>
+                    <td>20</td>
+                    <td>R1000.00</td>
+                    <td>
+                        <span class="badge bg-warning text-dark">Submitted</span>
+                    </td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-success">Approve</a>
+                        <a href="#" class="btn btn-sm btn-outline-danger">Reject</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>R60.00</td>
+                    <td>15</td>
+                    <td>R900.00</td>
+                    <td>
+                        <span class="badge bg-success">Approved</span>
+                    </td>
+                    <td>
+                        <!-- No action needed for approved claims -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>Emily Johnson</td>
+                    <td>R55.00</td>
+                    <td>18</td>
+                    <td>R990.00</td>
+                    <td>
+                        <span class="badge bg-danger">Rejected</span>
+                    </td>
+                    <td>
+                        <!-- No action needed for rejected claims -->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
+
+<!-- Optional Bootstrap and custom CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    .container {
+        background-color: #f8f9fa;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .card {
+        border-radius: 10px;
+        border: none;
+    }
+
+    .table {
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+
+        .table thead th {
+            background-color: #007bff;
+            color: white;
+        }
+
+    .badge {
+        font-size: 0.9rem;
+        padding: 0.5em 1em;
+        border-radius: 0.25rem;
+    }
+
+    .btn-outline-success {
+        color: #28a745;
+        border-color: #28a745;
+    }
+
+    .btn-outline-danger {
+        color: #dc3545;
+        border-color: #dc3545;
+    }
+</style>

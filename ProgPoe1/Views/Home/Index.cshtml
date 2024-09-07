@@ -1,13 +1,92 @@
-﻿
-@* Views/Home/Index.cshtml *@
+﻿@* Views/Home/Index.cshtml *@
 
 <!-- Main Container -->
 <div class="container my-5">
     <!-- Header Section -->
     <div class="text-center mb-4">
-        <h1 class="display-4">Contract Monthly Claim System (CMCS)</h1>
-        <p class="lead">Streamline the process of submitting and approving monthly claims for independent contractor lecturers.</p>
-        <a href="Home/Claims/SubmitClaim" class="btn btn-primary mx-2">Submit a Claim</a>
-        <a href="Home/Claims/ApprovalDashboard" class="btn btn-secondary mx-2">Approval Dashboard</a>
+        <h1 class="display-4 text-primary font-weight-bold">Contract Monthly Claim System (CMCS)</h1>
+        <p class="lead text-secondary">Streamline the process of submitting and approving monthly claims for independent contractor lecturers.</p>
     </div>
-    
+
+    <!-- Introduction Section -->
+    <div class="row">
+        <div class="col-md-6 d-flex align-items-center">
+            <div>
+                <h2 class="display-5 text-dark">Welcome to CMCS</h2>
+                <p class="lead text-muted">Welcome to the Contract Monthly Claim System (CMCS), a pioneering tool designed to streamline the often-complex process of submitting and approving monthly claims for Independent Contractor (IC) lecturers.</p>
+                <p class="text-muted">Our mission is to revolutionize claim management with an innovative approach, leveraging the power of .NET GUI development and C# to enhance both user experience and administrative efficiency.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="https://via.placeholder.com/500" class="img-fluid rounded shadow" alt="CMCS Overview">
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="my-5">
+        <h2 class="text-center text-primary">Key Features</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Feature 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Seamless Claim Submissions</h5>
+                        <p class="card-text">Effortlessly submit claims and upload essential supporting documents with our user-friendly interface.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Feature 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Enhanced Accuracy</h5>
+                        <p class="card-text">Reduce errors and increase accuracy with our comprehensive platform designed for meticulous scrutiny.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="card mb-4">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Feature 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Innovative Approach</h5>
+                        <p class="card-text">Our system incorporates industry best practices to ensure a future-proof solution for claim management.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center my-5">
+        <h2 class="text-success">Join Us in Transforming Claim Management</h2>
+        <p class="text-muted">Be part of a revolutionary approach to administrative processes and enhance organisational productivity with CMCS.</p>
+        <a href="#" class="btn btn-lg btn-primary">Get Started</a>
+    </div>
+</div>
+
+<!-- Optional Bootstrap and custom CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    .container {
+        background-color: #f8f9fa;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .card {
+        border: none;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+    .img-fluid {
+        border-radius: 10px;
+    }
+</style>
