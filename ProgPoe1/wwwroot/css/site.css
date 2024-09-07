@@ -1,22 +1,132 @@
+/* Base font size with media query */
 html {
-  font-size: 14px;
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
+/* Focus and active states */
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
+/* Global Styles */
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
+
+.container {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.card {
+    border-radius: 10px;
+    border: none;
+}
+
+.form-control-lg {
+    border-radius: 5px;
+}
+
+/* Button Styles */
+.btn-success {
+    background-color: #28a745;
+    border: none;
+}
+
+    .btn-success:hover {
+        background-color: #218838;
+    }
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+/* Image Styles */
+.img-fluid {
+    border-radius: 10px;
+}
+
+/* Call-to-action button */
+.text-center .btn-lg {
+    margin-top: 20px;
+}
+
+/* Table Styles */
+.table {
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+    .table thead th {
+        background-color: #007bff;
+        color: white;
+    }
+
+/* Badge Styles */
+.badge {
+    font-size: 0.9rem;
+    padding: 0.5em 1em;
+    border-radius: 0.25rem;
+}
+
+    .badge.bg-warning {
+        background-color: #ffc107;
+        color: #212529;
+    }
+
+    .badge.bg-success {
+        background-color: #28a745;
+    }
+
+    .badge.bg-danger {
+        background-color: #dc3545;
+    }
+
+/* Button Outline Styles */
+.btn-outline-success {
+    color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+}
+
+/* Container styling for the Approval Dashboard */
+.container {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Card styles */
+.card {
+    border-radius: 10px;
+    border: none;
+}
+
+/* Table styling */
+.table {
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+    .table thead th {
+        background-color: #007bff;
+        color: white;
+    }
